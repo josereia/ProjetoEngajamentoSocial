@@ -3,16 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-a {
   text-decoration: none;
-}
-
-.linkActive a {
-  border-bottom: solid 1px black;
-  color: black !important;
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar {
@@ -27,6 +19,7 @@ a {
   z-index: 1;
   background-color: rgba(246, 250, 253, 0.9);
   backdrop-filter: blur(50px);
+  transition: background 0.4s;
 }
 .navbar .logo {
   margin-right: 16px;
@@ -44,10 +37,10 @@ a {
   margin-left: 12px;
 }
 .navbar .menu li a {
-  color: gray;
   font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
+  color: gray;
 }
 .navbar .menu li:hover {
   cursor: pointer;
@@ -55,6 +48,10 @@ a {
 .navbar .menu li:hover a {
   border-bottom: solid 1px black;
   color: black;
+}
+.navbar .activeLink a{
+  border-bottom: solid 1px black !important;
+  color: black !important;
 }
 
 main section {
@@ -70,7 +67,7 @@ main section {
   border-radius: 6px;
   background-color: transparent;
   color: white;
-  transition: background 0.2s;
+  transition: background 0.4s;
 }
 
 .button:hover {
