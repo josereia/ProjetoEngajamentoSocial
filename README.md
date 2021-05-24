@@ -1,2 +1,2 @@
 # Projeto Engajamento Social
-## Um projeto cujo o objetivo é desenvolver possívies soluções para algum dos problemas de uma determinada comunidade.
+## Um projeto cujo o objetivo é desenvolver possívies soluções, junto a uma determinada comunidade, para algum de suas dificuldades.
