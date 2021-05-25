@@ -22,11 +22,9 @@
   transition: background 0.4s;
 }
 .navbar .logo {
-  margin-right: 16px;
-}
-.navbar div {
-  display: flex;
-  line-height: 100%;
+  width: 120px;
+  margin-top: 6px;
+  filter: invert(100%);
 }
 .navbar .menu {
   display: inherit;

@@ -3,6 +3,9 @@
   backdrop-filter: none;
   color: white;
 }
+.navbarOnTop .logo {
+  filter: invert(0%);
+}
 .navbarOnTop .menu li:hover a {
   border-bottom: solid 1px white !important;
   color: white !important;
