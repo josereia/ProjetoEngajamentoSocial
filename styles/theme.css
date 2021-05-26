@@ -1,0 +1,13 @@
+:root {
+    --primary-color: gray;
+    --primary-color-contrast: white;
+    --text-color: gray;
+    --text-color-contrast: white;
+    --text-title-color: black;
+
+    --navbar-background: #f6fafd;
+    --navbar-background-rgba: rgba(246, 250, 253, 0.9);
+    --navbar-color: black;
+    --navbar-color-contrast: white;
+    
+}

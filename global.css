@@ -1,10 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
+@import "./styles/theme.css";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+:target {
+  scroll-margin-top: .8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
+  color: var(--text-title-color);
 }
 
 .navbar {
@@ -17,7 +31,7 @@
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: rgba(246, 250, 253, 0.9);
+  background-color: var(--navbar-background-rgba);
   backdrop-filter: blur(50px);
   transition: background 0.4s;
 }
@@ -26,30 +40,29 @@
   margin-top: 6px;
   filter: invert(100%);
 }
-.navbar .menu {
-  display: inherit;
-  list-style-type: none;
+.navbar nav .btn-menu-mobile {
+  display: none;  
 }
-.navbar .menu li {
-  padding: 2px;
-  margin-left: 12px;
+.navbar nav .menu {
+  display: flex;
+  list-style: none;
+  gap: .4rem;
 }
-.navbar .menu li a {
+.navbar nav .menu li a {
+  padding: .2rem;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
-  color: gray;
+  color: var(--text-color);
 }
-.navbar .menu li:hover {
+.navbar nav .menu li a:hover {
   cursor: pointer;
+  border-bottom: solid 1px var(--navbar-color);
+  color: var(--navbar-color);
 }
-.navbar .menu li:hover a {
-  border-bottom: solid 1px black;
-  color: black;
-}
-.navbar .activeLink a{
-  border-bottom: solid 1px black !important;
-  color: black !important;
+.navbar nav .menu .active a{
+  border-bottom: solid 1px var(--navbar-color);
+  color: var(--navbar-color);
 }
 
 main section {
@@ -61,17 +74,16 @@ main section {
 
 .button {
   padding: 12px 20px 12px 20px;
-  border: solid 2px gray;
+  border: solid 2px var(--primary-color);
   border-radius: 6px;
   background-color: transparent;
-  color: white;
+  color: var(--text-color-contrast);
   transition: background 0.4s;
 }
-
 .button:hover {
   cursor: pointer;
-  background-color: rgba(128, 128, 128, 0.9);
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--text-color-contrast);
 }
 
 footer {
@@ -79,7 +91,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  background-color: #f6fafd;
+  background-color: var(--navbar-background);
 }
 footer span {
   width: 50%;
@@ -87,19 +99,30 @@ footer span {
 }
 footer span p {
   font-size: 0.8rem;
-  color: gray;
+  color: var(--ion-text);
 }
+
 
 @media (max-width: 650px) {
   .navbar {
+    height: 70px;
     padding: 2rem 1rem 2rem 1rem;
   }
-
-  footer {
-    padding: 12px 1rem 12px 1rem;
+  .navbar nav .btn-menu-mobile {
+    display: block;  
+  }
+  .navbar nav .menu {
+    display: none;
+  }
+  .navbar .mobile-menu .menu {
+    display: flex;
   }
 
   main section {
     padding: 60px 0 0 1rem;
+  }
+
+  footer {
+    padding: 12px 1rem 12px 1rem;
   }
 }

@@ -1,19 +1,18 @@
 .navbarOnTop {
   background-color: transparent;
   backdrop-filter: none;
-  color: white;
+  color: var(--text-color-contrast);
 }
 .navbarOnTop .logo {
   filter: invert(0%);
 }
-.navbarOnTop .menu li:hover a {
-  border-bottom: solid 1px white !important;
-  color: white !important;
+.navbarOnTop .menu li a:hover {
+  border-bottom: solid 1px var(--navbar-color-contrast) !important;
+  color: var(---navbar-color-contrast) !important;
 }
-
-.navbarOnTop .activeLink a {
-  border-bottom: solid 1px white !important;
-  color: white !important;
+.navbarOnTop nav .menu .active a {
+  border-bottom: solid 1px var(--navbar-color-contrast);
+  color: var(--navbar-color-contrast);
 }
 
 main #home {
@@ -29,7 +28,7 @@ main #home {
 main #home h1 {
   font-size: 4rem;
   font-weight: 700;
-  color: rgba(211, 211, 211, 0.9);
+  color: var(--text-color);
 }
 
 @media (max-width: 650px) {

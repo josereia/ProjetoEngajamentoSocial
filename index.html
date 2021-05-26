@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
+    <title>SOP - Save our Pets</title>
     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="shortcut icon" href="./assets/icons/favicon-96x96-dunplab-manifest-43425.png" type="image/png">
@@ -15,48 +15,54 @@
 <body>
     <header class="navbar navbarOnTop">
         <img class="logo" src="./assets/icons/logo.png" alt="Logo">
-        <ul class="menu">
-            <li class="activeLink"><a href="#home">Home</a></li>
-            <li><a href="./doacao.html">Doar</a></li>
-            <li><a href="./adocao.html">Adoção</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="#about">Sobre</a></li>
-        </ul>
+        <nav>
+            <button class="btn-menu-mobile">Menu</button>
+            <ul class="menu">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="./doacao.html">Doar</a></li>
+                <li><a href="./adocao.html">Adoção</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="#about">Sobre</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section id="home">
             <h1>Save our Pets</h1>
-            <a href="#secondSection" class="button">Veja mais</a>
+            <a href="#about" class="button">Veja mais</a>
         </section>
 
         <section id="about">
-            <h1>Save our Pets</h1>
-            <button>Veja mais</button>
+            <div class="about-content">
+                <h1>O Que é o nosso Projeto?</h1>
+                <p>Nosso projeto foi criado com o entuito de ajudar diversas ONGs e lares de adoção à dar um lar ao
+                    animais os quais estão aos tratos deles.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. </p>
+            </div>
         </section>
+
+
+    </main>
+
     </main>
 
     <footer>
-        <span>
-            <h5>Integrantes</h5>
-            <p>Christopher, João Sereia, Guilherme, Lucas, Guilherme Eduardo, Pedro, Gabriel</p>
-        </span>
-        <span>
-            <h5>Projeto Engajamento Social</h5>
-            <p>Unisociesc - Vida e Carreira</p>
-        </span>
+        <div class="footer-content">
+            <span>
+                <h5>Integrantes</h5>
+                <p>Christopher, João Sereia, Guilherme, Lucas, Guilherme Maffei, Pedro, Gabriel</p>
+            </span>
+            <span>
+                <h5>Projeto Engajamento Social</h5>
+                <p>Unisociesc - Vida e Carreira</p>
+            </span>
+        </div>
     </footer>
 
 
-
-
-
-
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="script.js"></script>
 </body>
