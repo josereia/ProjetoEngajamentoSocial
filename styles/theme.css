@@ -1,6 +1,7 @@
 :root {
     --primary-color: gray;
     --primary-color-contrast: white;
+    --background-color-gray:  rgba(241, 241, 241, .8);
     --text-color: gray;
     --text-color-contrast: white;
     --text-title-color: black;
@@ -9,5 +10,8 @@
     --navbar-background-rgba: rgba(246, 250, 253, 0.9);
     --navbar-color: black;
     --navbar-color-contrast: white;
+
+
+    --shadow-color: rgba(128, 128, 128,0.2);
     
 }

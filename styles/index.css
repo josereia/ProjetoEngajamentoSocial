@@ -15,27 +15,96 @@
   color: var(--navbar-color-contrast);
 }
 
+/*TEXTO CABEÇALHO*/
 main #home {
+  height: 100vh;
   position: relative;
-  display: grid;
-  place-items: center;
-  background-image: url("https://www.segredosdosonho.com.br/wp-content/uploads/2018/04/Sonhar-com-cachorro-preto.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/cachorro-preto.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 main #home h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 700;
-  color: var(--text-color);
+  color: rgb(214, 143, 36);
+  line-height: 0.9;
+  margin-bottom: 40px;
+}
+main #home .button {
+  color: var(--text-color-contrast);
 }
 
-@media (max-width: 650px) {
-  #home {
+/*SOBRE A SOP*/
+#about {background-color: var(--background-color-gray) !important;}
+.about-content {display: flex; flex-direction: row; align-items: center; justify-content: center;}
+.about-content > div {width: 50%;}
+.about-content > div:nth-child(1) {padding-right: 1rem;}
+.about-content img#cachorro-adocao {width: 100%;}
+h2.section-title{
+  font-size: 2.5rem;
+  margin-bottom: 35px
+}
+h2.section-title a {text-decoration: none; position: relative;}
+h2.section-title a::before {
+  content: '';
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background-color: rgb(214, 143, 36);;
+  transition: .5s;
+}
+.about-content p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+/*Como pode ajudar*/
+.help-content {display: flex; flex-direction: row; flex-wrap: wrap;  align-items: center; justify-content: center;}
+.help-content .help {display:flex; width: 44%;padding: 3% 1%; margin: 3% 2%; transition: 0.3s;}
+.help-content .help:hover {
+  box-shadow: 0 0 40px 10px rgb(245, 245, 245);
+  transform: scale(1.01);
+}
+.help-content .help .icon-help {padding: 0 20px;}
+.help-content .help .icon-help img{width: 50px; border-radius: 50%;}
+.help-content .help .about-help p {color: rgb(102, 102, 102)}
+
+/*Mobile*/
+@media (max-width: 650px) {  
+  main #home {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
     text-align: center;
   }
-  header {
-    padding: 2rem 1rem 2rem 1rem;
+  
+  .navbar nav .menu li a:hover {
+    border-bottom: solid 1px var(--navbar-color) !important;
+    color: var(--navbar-color) !important;
   }
+  .navbar nav .menu .active a{
+    border-bottom: solid 1px var(--navbar-color);
+    color: var(--navbar-color);
+  }
+  .navbarOnTop nav .btn-menu-mobile #hamburguer-icon {
+    color: var(--navbar-color-contrast);
+  }
+
+  /*SOBRE A SOP*/
+  .about-content {display: flex; flex-direction: column;} /*colocando uma div embaixo da outra*/
+  .about-content > div {width: 100%;} 
+  .about-content > div:nth-child(1) {padding-right: 0rem;} /*Tirando espaçamento da imagem*/
+
+  /*Como pode ajudar*/
+  .help-content {flex-direction: column}
+  .help {width: 94%}
 }

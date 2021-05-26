@@ -6,17 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOP - Save our Pets</title>
-    <link rel="stylesheet" href="./global.css">
-    <link rel="stylesheet" href="./styles/index.css">
     <link rel="shortcut icon" href="./assets/icons/favicon-96x96-dunplab-manifest-43425.png" type="image/png">
     <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
     <header class="navbar navbarOnTop">
         <img class="logo" src="./assets/icons/logo.png" alt="Logo">
         <nav>
-            <button class="btn-menu-mobile">Menu</button>
+            <!--btn para abrir o menu no mobile-->
+            <button class="btn-menu-mobile">
+                <span id="hamburguer-icon"></span>
+            </button>
             <ul class="menu">
                 <li class="active"><a href="#home">Home</a></li>
                 <li><a href="./doacao.html">Doar</a></li>
@@ -29,24 +32,80 @@
 
     <main>
         <section id="home">
-            <h1>Save our Pets</h1>
-            <a href="#about" class="button">Veja mais</a>
+            <h1 data-anime="top">Save our Pets</h1>
+            <a href="#about" class="button" data-anime="left">Veja mais</a>
         </section>
 
         <section id="about">
             <div class="about-content">
-                <h1>O Que é o nosso Projeto?</h1>
-                <p>Nosso projeto foi criado com o entuito de ajudar diversas ONGs e lares de adoção à dar um lar ao
-                    animais os quais estão aos tratos deles.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. </p>
+                <div>
+                    <h2 class="section-title"><a>O que é a SOP?</a></h2>
+                    <p>O projeto Save Our Pet nasceu em 2021, em um trabalho acadêmico de Vida e Cidadania com o fim de ajudar uma comunidade em especifico. Em um debate entre os integrantes para escolher qual seria a comunidade ajudada a escolhida foi as ONGs de ajuda á animais.</p>
+                    <p>A SOP tem por objetivo reunir ONGs de animais em prol do mesmo objetivo, visto que, a falta de comunicação entre elas gera um grande problema para a sociedade. </p>
+                    <p>Mas como nós podemos ajudar? Supondo Joãozinho gostaria muito de cuidar de um cãozinho, porém, onde ele mora não é permitido animais. Desta forma Joãozinho pode encontrar uma ONG onde pode auxiliar com cuidados e alimentação da mesma forma que faria se tivesse um pet em sua casa. </p>
+                </div>
+
+                <div>
+                    <img src="./assets/cachorro-adocao.jpeg" id="cachorro-adocao" data-anime="top" alt="Imagem de cachorro com laço para a adoção" title="Imagem de cachorro">
+                </div>
             </div>
         </section>
 
+        <section id="ajuda">
+            <div>
+                <h2 class="section-title"><a>Veja como você pode ajudar</a></h2>
 
-    </main>
+                <div class="help-content">
 
+                    <div class="help">
+                        <div class="icon-help">
+                            <img src="./assets/icons/icon-pata.png" alt="">
+                        </div>
+                        <div class="about-help">
+                            <h3>Seja um voluntário</h3>
+                            <p>Se você ama os bichanos e tem muita força de vontade, saiba que pode encontrar a instituição mais próxima que precisa da sua ajuda. Essa missão é somente para os super amantes de pets. Se você tem aquele amor incondicional por eles você pode ajudar.</p>
+                        </div>
+                    </div>
+
+                    <div class="help">
+                        <div class="icon-help">
+                            <img src="./assets/icons/icon-pata.png" alt="">
+                        </div>
+                        <div class="about-help">
+                            <h3>Divulgue ONGs que estão precisando de ajuda</h3>
+                            <p>Toda vez que alguém divulga em suas redes sociais a foto de alguma ONG que está precisando de ajuda, a chance de encontrar alguém que pode ajudar só cresce.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="help">
+                        <div class="icon-help">
+                            <img src="./assets/icons/icon-pata.png" alt="">
+                        </div>
+                        <div class="about-help">
+                            <h3>Adote</h3>
+                            <p>Adotar um bichinho além de ajudar as ONGs pode trazer muita felicidade para você e sua família. Vai me dizer que tem algo melhor que chegar em casa e ser recepcionado por alguém que está com muitas saudadades.</p>
+                        </div>
+                    </div>
+
+                    <div class="help">
+                        <div class="icon-help">
+                            <img src="./assets/icons/icon-pata.png" alt="">
+                        </div>
+                        <div class="about-help">
+                            <h3>Apóie</h3>
+                            <p>Algumas instituições estão precisando da sua ajuda financeira. A maioria delas são sustentadas por voluntários que se esforçam todos os dias por uma vida melhor por aqueles que muitas vezes são ignorados.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="parceiros">
+            <div>
+                <h2 class="section-title"><a>Conheça nossos parceiros</a</h2>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -65,6 +124,7 @@
 
     <script src="./js/index.js"></script>
     <script src="script.js"></script>
+    <script src="./js/data-anime.js"></script>
 </body>
 
 </html>
