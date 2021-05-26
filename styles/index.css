@@ -42,7 +42,7 @@ main #home .button {
 
 /*SOBRE A SOP*/
 #about {background-color: var(--background-color-gray) !important;}
-.about-content {display: flex; flex-direction: row; align-items: center; justify-content: center;}
+.about-content {display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 2rem;}
 .about-content > div {width: 50%;}
 .about-content > div:nth-child(1) {padding-right: 1rem;}
 .about-content img#cachorro-adocao {width: 100%;}
@@ -63,19 +63,25 @@ h2.section-title a::before {
 }
 .about-content p {
   margin: 20px 0;
-  text-align: justify;
 }
 
 /*Como pode ajudar*/
-.help-content {display: flex; flex-direction: row; flex-wrap: wrap;  align-items: center; justify-content: center;}
-.help-content .help {display:flex; width: 44%;padding: 3% 1%; margin: 3% 2%; transition: 0.3s;}
+.help-content {display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); place-items: center; grid-gap: 2rem;}
+.help-content .help {display:flex; width: 500px; padding: 3% 1%; transition: 0.3s;}
 .help-content .help:hover {
   box-shadow: 0 0 40px 10px rgb(245, 245, 245);
   transform: scale(1.01);
 }
-.help-content .help .icon-help {padding: 0 20px;}
+.help-content .help .icon-help {margin-right: 20px;}
 .help-content .help .icon-help img{width: 50px; border-radius: 50%;}
-.help-content .help .about-help p {color: rgb(102, 102, 102)}
+.help-content .help .about-help p {color: rgb(102, 102, 102);}
+
+
+.parceiros {
+  background-color: var(--background-color-gray);
+}
+
+
 
 /*Mobile*/
 @media (max-width: 650px) {  
@@ -104,7 +110,13 @@ h2.section-title a::before {
   .about-content > div {width: 100%;} 
   .about-content > div:nth-child(1) {padding-right: 0rem;} /*Tirando espaçamento da imagem*/
 
-  /*Como pode ajudar*/
-  .help-content {flex-direction: column}
-  .help {width: 94%}
+  .help-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .help-content .help{
+    width: 100%;
+  }
+
 }

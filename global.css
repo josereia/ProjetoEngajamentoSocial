@@ -27,6 +27,12 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-title-color);
 }
 
+p {
+  text-align: justify; 
+  hyphens: auto;
+}
+
+
 /*BARRA DE NAVEGAÇÃO*/
 .navbar {
   width: 100%;
