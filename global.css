@@ -136,16 +136,23 @@ main img {
 
 footer {
   padding: 12px 6rem 12px 6rem;
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
   background-color: var(--navbar-background);
 }
-footer span {
-  width: 50%;
-  text-align: center;
+footer .footer-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
 }
-footer span p {
+footer .footer-content span {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-content span p {
   font-size: 0.8rem;
   color: var(--text-color);
 }

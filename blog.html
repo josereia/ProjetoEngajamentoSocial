@@ -7,6 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="global.css">
+
+    <style>
+        section {
+            height: 100vh !important;
+            display: grid;
+            place-items: center;
+        }
+
+        article {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+        }
+
+        article img {
+            width: 60px;
+            height: 60px;
+            margin-right: 1rem;
+        }
+
+        article:hover {
+            background-color: #F6FAFD;
+            box-shadow: 0 0 10px rgba(128, 128, 128,0.2);
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,13 +49,46 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./doacao.html">Doar</a></li>
                 <li><a href="./adocao.html">Adoção</a></li>
-                <li class="active"><a href="./blog.html">Blog</a></li>
+                <li class="active"><a href="./blog.html">Comunidade</a></li>
                 <li><a href="./index.html#about">Sobre</a></li>
             </ul>
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <section>
+            <article>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1200px-Instagram-Icon.png"
+                    alt="logo instagram">
+                <span>
+                    <h2>Instagram</h2>
+                    <a href="https://www.instagram.com/sopsaveourpets/">Acessar</a>
+                </span>
+            </article>
+
+            <article>
+                <img src="https://pcdn.sharethis.com/wp-content/uploads/2017/11/Facebook-share-icon.png"
+                    alt="logo facebook">
+                <span>
+                    <h2>Facebook</h2>
+                    <a href="https://www.facebook.com/people/Sop-Save-Our-Pets/100068784061862/">Acessar</a>
+                </span>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span>
+                <h5>Integrantes</h5>
+                <p>Christopher, João Sereia, Guilherme, Lucas, Guilherme Maffei, Pedro, Gabriel</p>
+            </span>
+            <span>
+                <h5>Projeto Engajamento Social</h5>
+                <p>Unisociesc - Vida e Carreira</p>
+            </span>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
